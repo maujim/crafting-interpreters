@@ -1,0 +1,52 @@
+src/lox/ast_printer.py:43: error: Cannot instantiate abstract class
+"AstPrinter" with abstract attributes "visit_assign_expr", "visit_call_expr",
+"visit_logical_expr" and "visit_variable_expr"
+        AstPrinter().print(expression)
+        ^
+src/lox/scanner.py:75: error: Argument 1 to "ThrowError" has incompatible type
+"int"; expected "Token"
+                ThrowError(self.line, "Unterminated string.")
+                           ^
+src/lox/scanner.py:186: error: Argument 1 to "ThrowError" has incompatible type
+"int"; expected "Token"
+                    ThrowError(self.line, "Unexpected character.")
+                               ^
+src/lox/interpreter.py:99: error: Missing return statement
+        def visit_binary_expr(self, expr: Binary) -> object:
+        ^
+src/lox/interpreter.py:109: error: Argument 1 to "float" has incompatible type
+"object"; expected "Union[SupportsFloat, SupportsIndex, str, bytes]"
+                return float(left) > float(right)
+                             ^
+src/lox/interpreter.py:112: error: Argument 1 to "float" has incompatible type
+"object"; expected "Union[SupportsFloat, SupportsIndex, str, bytes]"
+                return float(left) >= float(right)
+                             ^
+src/lox/interpreter.py:115: error: Argument 1 to "float" has incompatible type
+"object"; expected "Union[SupportsFloat, SupportsIndex, str, bytes]"
+                return float(left) < float(right)
+                             ^
+src/lox/interpreter.py:118: error: Argument 1 to "float" has incompatible type
+"object"; expected "Union[SupportsFloat, SupportsIndex, str, bytes]"
+                return float(left) <= float(right)
+                             ^
+src/lox/interpreter.py:121: error: Argument 1 to "float" has incompatible type
+"object"; expected "Union[SupportsFloat, SupportsIndex, str, bytes]"
+                return float(left) - float(right)
+                             ^
+src/lox/interpreter.py:133: error: Argument 1 to "float" has incompatible type
+"object"; expected "Union[SupportsFloat, SupportsIndex, str, bytes]"
+                return float(left) / float(right)
+                             ^
+src/lox/interpreter.py:136: error: Argument 1 to "float" has incompatible type
+"object"; expected "Union[SupportsFloat, SupportsIndex, str, bytes]"
+                return float(left) * float(right)
+                             ^
+src/lox/interpreter.py:138: error: Missing return statement
+        def visit_unary_expr(self, expr: Unary) -> object:
+        ^
+src/lox/interpreter.py:143: error: Argument 1 to "float" has incompatible type
+"object"; expected "Union[SupportsFloat, SupportsIndex, str, bytes]"
+                return -1 * float(right)
+                                  ^
+Found 13 errors in 3 files (checked 21 source files)
